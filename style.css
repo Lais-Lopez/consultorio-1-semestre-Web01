@@ -1,0 +1,116 @@
+/* Fonte padrão */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagem de topo */
+.alta {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-bottom: 4px solid #4a6cf7;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+h1 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+/* Inputs */
+input[type="text"] {
+    padding: 10px 14px;
+    width: 260px;
+    border: 2px solid #dcdfe6;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+input[type="text"]:focus {
+    border-color: #4a6cf7;
+}
+
+/* Botões */
+input[type="button"] {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    transition: 0.2s;
+}
+
+#Adicionar {
+    background: #4a6cf7;
+    color: white;
+}
+
+#Adicionar:hover {
+    background: #3a58d0;
+}
+
+#Atender {
+    background: #23b26d;
+    color: white;
+}
+
+#Atender:hover {
+    background: #1c8c57;
+}
+
+#Urgencia, #btUrgencia {
+    background: #e74c3c;
+    color: white;
+}
+
+#Urgencia:hover, #btUrgencia:hover {
+    background: #c0392b;
+}
+
+/* Caixa de listas */
+pre {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    font-size: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.fonteAzul {
+    color: #4a6cf7;
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    input[type="text"] {
+        width: 180px;
+    }
+
+    pre {
+        width: 95%;
+    }
+}
